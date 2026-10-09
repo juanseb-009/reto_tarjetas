@@ -4,102 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokémon - Tabla del 3</title>
+    <title>Tablas de multiplicar</title>
     <link rel="stylesheet" href="multiplicar.css">
 </head>
 <body>
 
-    <main class="contenedor">
+    <div class="contenedor">
 
         <header class="encabezado">
-            <p class="etiqueta">⚡ ZONA DE ENTRENAMIENTO ⚡</p>
+            <p class="etiqueta">¡ENTRENA TU MENTE!</p>
 
-            <button class="boton-probar" type="button"
-                    onclick="generarTablas()">
-                ★ PROBAR ★
+            <button class="boton-probar" onclick="generarTablas(5)">
+                PROBAR
             </button>
 
-            <h1>¡La tabla del <span>3</span>!</h1>
+            <h1>¡La tabla del <span id="tituloTabla">3</span>!</h1>
 
             <p class="descripcion">
-                ¡Entrena tu mente y conviértete en un maestro Pokémon!
+                ¡Practica las multiplicaciones y diviértete aprendiendo!
             </p>
         </header>
 
         <section class="panel-tabla">
-            <h2>⚡ Ataques matemáticos</h2>
+            <h2>Tabla de multiplicar</h2>
 
-            <div class="tabla" id="contenedor">
-
-                <div class="fila">
-                    <span class="operacion">3 × 1</span>
-                    <span class="igual">=</span>
-                    <span class="resultado">3</span>
-                </div>
-
-                <div class="fila">
-                    <span class="operacion">3 × 2</span>
-                    <span class="igual">=</span>
-                    <span class="resultado">6</span>
-                </div>
-
-                <div class="fila">
-                    <span class="operacion">3 × 3</span>
-                    <span class="igual">=</span>
-                    <span class="resultado">9</span>
-                </div>
-
-                <div class="fila">
-                    <span class="operacion">3 × 4</span>
-                    <span class="igual">=</span>
-                    <span class="resultado">12</span>
-                </div>
-
-                <div class="fila">
-                    <span class="operacion">3 × 5</span>
-                    <span class="igual">=</span>
-                    <span class="resultado">15</span>
-                </div>
-
-                <div class="fila">
-                    <span class="operacion">3 × 6</span>
-                    <span class="igual">=</span>
-                    <span class="resultado">18</span>
-                </div>
-
-                <div class="fila">
-                    <span class="operacion">3 × 7</span>
-                    <span class="igual">=</span>
-                    <span class="resultado">21</span>
-                </div>
-
-                <div class="fila">
-                    <span class="operacion">3 × 8</span>
-                    <span class="igual">=</span>
-                    <span class="resultado">24</span>
-                </div>
-
-                <div class="fila">
-                    <span class="operacion">3 × 9</span>
-                    <span class="igual">=</span>
-                    <span class="resultado">27</span>
-                </div>
-
-                <div class="fila">
-                    <span class="operacion">3 × 10</span>
-                    <span class="igual">=</span>
-                    <span class="resultado">30</span>
-                </div>
-
-            </div>
+            <div class="tabla" id="contenedor"></div>
         </section>
 
         <footer class="pie">
-            <p>⚡ ¡Sigue entrenando, futuro maestro Pokémon! ⚡</p>
-            <span>EDICIÓN ELÉCTRICA · TABLA DEL 3</span>
+            <p>Creado por: Sebas Santana</p>
         </footer>
 
-    </main>
+    </div>
 
     <script src="multiplicar.js"></script>
 </body>

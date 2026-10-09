@@ -1,5 +1,4 @@
 
-/* CONFIGURACIÓN GENERAL */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,250 +7,138 @@
 
 body {
     min-height: 100vh;
-    padding: 25px 16px;
+    padding: 25px 15px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #202b45;
-    background: linear-gradient(135deg, #173b77, #2468a8, #102a55);
+    background: linear-gradient(135deg, #fff3b0, #c9e8ff);
+    color: #17345c;
 }
 
-/* CONTENEDOR PRINCIPAL */
 .contenedor {
     width: 100%;
-    max-width: 720px;
+    max-width: 750px;
     margin: 0 auto;
-    overflow: hidden;
-    background-color: #fffdf2;
-    border: 4px solid #f8c928;
-    border-radius: 22px;
-    box-shadow: 0 10px 0 #102344,
-                0 16px 28px rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    background-color: #ffffff;
+    border: 4px solid #17345c;
+    border-radius: 25px;
+    box-shadow: 0 8px 0 #17345c;
 }
 
-/* ENCABEZADO */
 .encabezado {
-    padding: 30px 24px;
     text-align: center;
-    background: linear-gradient(135deg, #ffdf45, #ffbd25);
-    border-bottom: 5px solid #e49b18;
 }
 
 .etiqueta {
-    margin-bottom: 20px;
-    color: #233e72;
-    font-size: 12px;
-    font-weight: 900;
+    margin-bottom: 15px;
+    color: #e33d3d;
+    font-size: 14px;
+    font-weight: bold;
     letter-spacing: 2px;
 }
 
-/* BOTÓN PROBAR */
 .boton-probar {
     display: block;
-    width: 100%;
-    max-width: 190px;
-    margin: 0 auto 24px;
-    padding: 14px 20px;
-    border: 3px solid #ffffff;
+    margin: 0 auto 20px;
+    padding: 12px 35px;
+    border: 3px solid #17345c;
     border-radius: 30px;
-    background-color: #e83d46;
-    color: #ffffff;
-    font-size: 17px;
-    font-weight: 900;
-    letter-spacing: 1px;
+    background-color: #ffcc33;
+    color: #17345c;
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 5px 0 #a91f2c;
-    transition: transform 0.2s ease,
-                box-shadow 0.2s ease,
-                background-color 0.2s ease;
+    box-shadow: 0 5px 0 #17345c;
 }
 
 .boton-probar:hover {
-    background-color: #c92135;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 0 #a91f2c;
+    background-color: #ffe071;
 }
 
 .boton-probar:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 0 #a91f2c;
+    transform: translateY(3px);
+    box-shadow: 0 2px 0 #17345c;
 }
 
-.boton-probar:focus-visible {
-    outline: 3px solid #173b77;
-    outline-offset: 4px;
-}
-
-/* TÍTULO */
 h1 {
-    color: #173b77;
-    font-size: 38px;
-    font-weight: 900;
-    line-height: 1.2;
-    text-shadow: 2px 2px 0 #ffffff;
+    margin-bottom: 12px;
+    font-size: 36px;
 }
 
 h1 span {
-    color: #e83d46;
-    font-size: 52px;
+    color: #e33d3d;
 }
 
 .descripcion {
-    max-width: 430px;
-    margin: 14px auto 0;
-    color: #374665;
+    margin-bottom: 25px;
     font-size: 16px;
-    line-height: 1.6;
-    font-weight: 600;
-}
-
-/* PANEL DE LA TABLA */
-.panel-tabla {
-    padding: 28px;
-}
-
-.panel-tabla h2 {
-    margin-bottom: 22px;
-    color: #173b77;
-    text-align: center;
-    font-size: 23px;
-}
-
-/* DISTRIBUCIÓN DE LAS OPERACIONES */
-.tabla {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 13px;
-}
-
-/* CADA OPERACIÓN */
-.fila {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    padding: 15px 18px;
-    background-color: #ffffff;
-    border: 2px solid #d8e3f3;
-    border-left: 6px solid #3478c8;
-    border-radius: 12px;
-    box-shadow: 0 3px 0 #d5dfec;
-    transition: transform 0.2s ease,
-                background-color 0.2s ease,
-                border-color 0.2s ease;
-}
-
-.fila:hover {
-    background-color: #fff2b8;
-    border-color: #f0bd27;
-    transform: translateY(-3px);
-}
-
-.operacion {
-    color: #25395e;
-    font-size: 19px;
-    font-weight: 800;
-}
-
-.igual {
-    color: #8591a5;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.resultado {
-    color: #e83d46;
-    font-size: 21px;
-    font-weight: 900;
-}
-
-/* PIE DE PÁGINA */
-.pie {
-    padding: 22px 16px;
-    text-align: center;
-    background-color: #173b77;
-    border-top: 5px solid #f8c928;
-}
-
-.pie p {
-    margin-bottom: 10px;
-    color: #ffdf45;
-    font-size: 15px;
-    font-weight: bold;
     line-height: 1.5;
 }
 
-.pie span {
-    color: #dce8fa;
-    font-size: 10px;
+.panel-tabla {
+    padding: 20px;
+    border: 3px solid #17345c;
+    border-radius: 18px;
+    background-color: #eaf6ff;
+}
+
+.panel-tabla h2 {
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.tabla {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 18px;
+    border: 2px solid #17345c;
+    border-radius: 12px;
+    background-color: #ffffff;
+    font-size: 20px;
     font-weight: bold;
-    letter-spacing: 2px;
 }
 
-/* TABLETS */
-@media (max-width: 768px) {
-    body {
-        padding: 20px 14px;
-    }
-
-    .encabezado {
-        padding: 26px 18px;
-    }
-
-    .panel-tabla {
-        padding: 22px;
-    }
-
-    h1 {
-        font-size: 33px;
-    }
-
-    h1 span {
-        font-size: 45px;
-    }
-
-    .fila {
-        padding: 14px 12px;
-    }
-
-    .operacion {
-        font-size: 17px;
-    }
-
-    .resultado {
-        font-size: 19px;
-    }
+.operacion {
+    text-align: right;
 }
 
-/* CELULARES */
-@media (max-width: 480px) {
+.igual {
+    color: #e33d3d;
+}
+
+.resultado {
+    color: #168044;
+    text-align: left;
+}
+
+.pie {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
     body {
-        padding: 14px 10px;
+        padding: 15px 10px;
     }
 
     .contenedor {
+        padding: 18px 12px;
         border-width: 3px;
-        border-radius: 17px;
-    }
-
-    .encabezado {
-        padding: 24px 14px;
-    }
-
-    .etiqueta {
-        font-size: 10px;
-        letter-spacing: 1.5px;
-    }
-
-    .boton-probar {
-        max-width: 100%;
-        font-size: 16px;
+        border-radius: 18px;
     }
 
     h1 {
         font-size: 28px;
-    }
-
-    h1 span {
-        font-size: 38px;
     }
 
     .descripcion {
@@ -259,40 +146,34 @@ h1 span {
     }
 
     .panel-tabla {
-        padding: 20px 14px;
+        padding: 14px 10px;
     }
 
     .panel-tabla h2 {
-        font-size: 19px;
-    }
-
-    .tabla {
-        grid-template-columns: 1fr;
-        gap: 11px;
-    }
-
-    .fila {
-        padding: 15px 18px;
-    }
-
-    .operacion {
-        font-size: 18px;
-    }
-
-    .resultado {
         font-size: 21px;
     }
 
-    .pie p {
+    .fila {
+        gap: 8px;
+        padding: 10px;
+        font-size: 17px;
+    }
+
+    .boton-probar {
+        font-size: 16px;
+    }
+
+    .pie {
         font-size: 13px;
     }
 }
 
-/* RESPETA LA PREFERENCIA DE MENOS MOVIMIENTO */
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        transition: none !important;
+@media (max-width: 350px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .fila {
+        font-size: 15px;
     }
 }
