@@ -14,7 +14,8 @@
         <header class="encabezado">
             <p class="etiqueta">⚡ ZONA DE ENTRENAMIENTO ⚡</p>
 
-            <button class="boton-probar" type="button">
+            <button class="boton-probar" type="button"
+                    onclick="generarTablas()">
                 ★ PROBAR ★
             </button>
 
@@ -28,7 +29,8 @@
         <section class="panel-tabla">
             <h2>⚡ Ataques matemáticos</h2>
 
-            <div class="tabla">
+            <div class="tabla" id="contenedor">
+
                 <div class="fila">
                     <span class="operacion">3 × 1</span>
                     <span class="igual">=</span>
@@ -88,6 +90,7 @@
                     <span class="igual">=</span>
                     <span class="resultado">30</span>
                 </div>
+
             </div>
         </section>
 
@@ -98,5 +101,6 @@
 
     </main>
 
+    <script src="multiplicar.js"></script>
 </body>
 </html>
