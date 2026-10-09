@@ -7,7 +7,7 @@ body {
     padding: 20px;
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #dff6ff, #fff5b8);
+    background: linear-gradient(135deg, #52c1ed, #fff5b8);
     color: #17365d;
 }
 
@@ -43,29 +43,59 @@ h1 {
     font-size: 2.2rem;
 }
 
-h1 span {
-    color: #e63946;
-}
-
 .descripcion {
     margin: 12px 0 24px;
     line-height: 1.5;
 }
 
-.formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
+/* Bienvenida */
+
+.bienvenida {
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #fff5b8, #dff6ff);
+    border: 2px solid #f5c542;
+    border-radius: 15px;
+    line-height: 1.6;
 }
 
-.formulario label {
-    font-size: 1rem;
+.bienvenida h2 {
+    margin-top: 0;
+    color: #17365d;
+    font-size: 1.5rem;
+}
+
+.bienvenida p {
+    margin: 10px 0;
+}
+
+.frase-final {
+    color: #e63946;
     font-weight: bold;
 }
 
-.formulario input {
+/* Selector de tabla */
+
+.selector-tabla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+    padding: 22px;
+    text-align: center;
+    background-color: #edf8ff;
+    border: 2px solid #8cc9ed;
+    border-radius: 16px;
+}
+
+.selector-tabla label {
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+.selector-tabla input {
     width: 100%;
     max-width: 280px;
     padding: 12px;
@@ -75,7 +105,7 @@ h1 span {
     text-align: center;
 }
 
-.formulario input:focus {
+.selector-tabla input:focus {
     outline: 3px solid #f5c542;
     outline-offset: 2px;
 }
@@ -86,6 +116,8 @@ h1 span {
     font-size: 0.9rem;
     line-height: 1.5;
 }
+
+/* Botón */
 
 .boton-probar {
     padding: 13px 30px;
@@ -109,9 +141,11 @@ h1 span {
     outline-offset: 3px;
 }
 
+/* Mensajes */
+
 .mensaje {
     min-height: 24px;
-    margin: 18px 0 0;
+    margin: 0;
     font-weight: bold;
     line-height: 1.5;
 }
@@ -123,6 +157,8 @@ h1 span {
 .mensaje.exito {
     color: #19733b;
 }
+
+/* Tabla de multiplicar */
 
 .panel-tabla {
     margin-top: 30px;
@@ -169,6 +205,8 @@ h1 span {
     color: #19733b;
 }
 
+/* Pie de página */
+
 .pie {
     margin-top: 25px;
     text-align: center;
@@ -179,6 +217,8 @@ h1 span {
 .pie p {
     margin: 6px 0;
 }
+
+/* Diseño adaptable */
 
 @media (max-width: 600px) {
     body {
@@ -197,6 +237,18 @@ h1 span {
 
     .descripcion {
         font-size: 0.95rem;
+    }
+
+    .bienvenida {
+        padding: 14px;
+    }
+
+    .bienvenida h2 {
+        font-size: 1.2rem;
+    }
+
+    .selector-tabla {
+        padding: 15px;
     }
 
     .panel-tabla {
