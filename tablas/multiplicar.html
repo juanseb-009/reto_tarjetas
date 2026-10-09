@@ -14,15 +14,24 @@
         <header class="encabezado">
             <p class="etiqueta">¡ENTRENA TU MENTE!</p>
 
-            <button class="boton-probar" onclick="generarTablas(5)">
-                PROBAR
-            </button>
-
             <h1>¡La tabla del <span id="tituloTabla">3</span>!</h1>
 
             <p class="descripcion">
                 ¡Practica las multiplicaciones y diviértete aprendiendo!
             </p>
+
+            <div class="formulario">
+                <label for="numeroTabla">Escribe un número:</label>
+                <input
+                    type="number"
+                    id="numeroTabla"
+                    placeholder="Ejemplo: 5"
+                >
+            </div>
+
+            <button class="boton-probar" onclick="generarTablas(5)">
+                PROBAR
+            </button>
         </header>
 
         <section class="panel-tabla">
@@ -32,7 +41,7 @@
         </section>
 
         <footer class="pie">
-            <p>Creado por: Sebas Santana</p>
+            <p>Creado por: Tu nickname</p>
         </footer>
 
     </div>
