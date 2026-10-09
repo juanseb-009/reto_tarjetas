@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="multiplicar.css">
 </head>
 <body>
-
     <div class="contenedor">
 
         <header class="encabezado">
@@ -21,17 +19,29 @@
             </p>
 
             <div class="formulario">
-                <label for="numeroTabla">Escribe un número:</label>
+                <label for="numeroTabla">¿Qué tabla quieres aprender?</label>
+
                 <input
                     type="number"
                     id="numeroTabla"
-                    placeholder="Ejemplo: 5"
+                    min="1"
+                    max="100"
+                    placeholder="Ejemplo: 8"
+                    aria-describedby="ayudaNumero"
                 >
+
+                <p class="ayuda" id="ayudaNumero">
+                    Escribe un número del 1 al 100 y presiona PROBAR.
+                </p>
             </div>
 
-            <button class="boton-probar" onclick="generarTablas(5)">
+            <button class="boton-probar" onclick="generarTablas()">
                 PROBAR
             </button>
+
+            <p id="mensaje" class="mensaje" aria-live="polite">
+                ¡La tabla del 3 está lista para practicar!
+            </p>
         </header>
 
         <section class="panel-tabla">
@@ -42,6 +52,7 @@
 
         <footer class="pie">
             <p>Creado por: Tu nickname</p>
+            <p>¡Aprender también puede ser una aventura!</p>
         </footer>
 
     </div>
